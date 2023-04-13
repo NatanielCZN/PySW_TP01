@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONT "TITAN ONE" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Roboto+Condensed:wght@300&family=Titan+One&display=swap"
+        rel="stylesheet">
+
+    <!-- ESTILOS PROPIOS -->
+    <link rel="stylesheet" href="/css/estilos.css">
+
+    <title>TP01 | Contacto</title>
+</head>
+
+<body>
+    <header>
+        <h1>PORTAL DE NOTICIAS</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/index.html" translate="no">Principal</a></li>
+
+            <li><a href="https://www.jujuyalmomento.com/" translate="no" target="_blank" rel="noopener noreferrer">Ayuda</a></li>
+
+            <li><a href="/contacto.html" translate="no" class="activa">Contacto</a></li>
+            
+            <li><a href="/galeria.html" translate="no">Galeria</a></li>
+        </ul>
+    </nav>
+
+    <!-- FORMULARIO -->
+    <section class="contenido_contacto">
+        <p>(<span>*</span>)Todos los campos son obligatorios</p>
+
+        <form action="/contacto.html" method="GET">
+            <div class="campo">
+                <label class="titulo_campo" for="nombre">Tu Nombre (<span>*</span>):</label><br />
+
+                <input class="relleno_campo" type="text" id="nombre" name="nombre" placeholder="Ingrese su Nombre" />
+            </div>
+
+            <div class="campo">
+                <label class="titulo_campo" for="apellidom">Apellido Materno (<span>*</span>):</label><br />
+
+                <input class="relleno_campo" type="text" id="apellidom" name="apellidom"
+                    placeholder="Ingrese su Apellido Materno" />
+            </div>
+
+            <div class="campo">
+                <label class="titulo_campo" for="apellidop">Apellido Paterno:</label><br />
+
+                <input class="relleno_campo" type="text" id="apellidop" name="apellidop"
+                    placeholder="Ingrese su Apellido Paterno" />
+            </div>
+
+            <div class="campo">
+                <label class="titulo_campo" for="rfc">RFC:</label><br>
+
+                <input class="relleno_campo" type="text" id="rfc" name="rfc" placeholder="Ingrese su RFC" />
+            </div>
+
+            <div class="campo">
+                <label class="titulo_campo" for="codigopostal">Codigo Postal (<span>*</span>):</label><br />
+
+                <input class="relleno_campo" type="text" id="codigopostal" name="codigopostal"
+                    placeholder="Ingrese Codigo Postal" />
+            </div>
+
+            <div class="campo">
+                <label class="titulo_campo" for="pais">Pais (<span>*</span>):</label><br />
+
+                <select class="relleno_campo" name="pais" id="pais">
+                    <option value="pais_argentina" selected>Argentina</option>
+                    <option value="pais_brasil">Bolivia</option>
+                    <option value="pais_bolivia">Brasil</option>
+                    <option value="pais_chile">Chile</option>
+                    <option value="pais_colombia">Colombia</option>
+                    <option value="pais_ecuador">Ecuador</option>
+                    <option value="pais_paraguay">Paraguay</option>
+                    <option value="pais_peru">Peru</option>
+                    <option value="pais_uruguay">Uruguay</option>
+                    <option value="pais_venezuela">Venezuela</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label class="titulo_campo" for="provincia">Provincia (<span>*</span>):</label><br />
+
+                <select class="relleno_campo" name="provincia" id="provincia">
+                    <option value="prov_buenosaires">Buenos Aires</option>
+                    <option value="prov_caba">CABA</option>
+                    <option value="prov_catamarca">Catamarca</option>
+                    <option value="prov_chaco">Chaco</option>
+                    <option value="prov_chubut">Chubut</option>
+                    <option value="prov_cordoba">Córdoba</option>
+                    <option value="prov_corrientes">Corrientes</option>
+                    <option value="prov_entrerios">Entre Ríos</option>
+                    <option value="prov_formosa">Formosa</option>
+                    <option value="prov_jujuy" selected>Jujuy</option>
+                    <option value="prov_lapampa">La Pampa</option>
+                    <option value="prov_larioja">La Rioja</option>
+                    <option value="prov_mendoza">Mendoza</option>
+                    <option value="prov_misiones">Misiones</option>
+                    <option value="prov_neuquen">Neuquén</option>
+                    <option value="prov_rionegro">Río Negro</option>
+                    <option value="prov_salta">Salta</option>
+                    <option value="prov_sanjuan">San Juan</option>
+                    <option value="prov_sanluis">San Luis</option>
+                    <option value="prov_santacruz">Santa Cruz</option>
+                    <option value="prov_santafe">Santa Fe</option>
+                    <option value="prov_santiagodelestero">Santiago del Estero</option>
+                    <option value="prov_tierradelfuego">Tierra del Fuego</option>
+                    <option value="prov_tucuman">Tucumán</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label class="titulo_campo" for="departamento">Departamento (<span>*</span>):</label><br />
+
+                <select class="relleno_campo" name="departamento" id="departamento">
+                    <option value="dep_cochinoca">Cochinoca</option>
+                    <option value="dep_drmanuelbelgrano" selected>Dr. Manuel Belgrano</option>
+                    <option value="dep_elcarmen">El Carmen</option>
+                    <option value="dep_humahuaca">Humahuaca</option>
+                    <option value="dep_ledesma">Ledesma</option>
+                    <option value="dep_palpala">Palpala</option>
+                    <option value="dep_rinconada">Rinconada</option>
+                    <option value="dep_sanantonio">San Antonio</option>
+                    <option value="dep_sanpedro">San Pedro</option>
+                    <option value="dep_santabarbara">Santa Bárbara</option>
+                    <option value="dep_santacatalina">Santa Catalina</option>
+                    <option value="dep_susques">Susques</option>
+                    <option value="dep_tilcara">Tilcara</option>
+                    <option value="dep_tumbaya">Tumbaya</option>
+                    <option value="dep_vallegrande">Valle Grande</option>
+                    <option value="dep_yavi">Yavi</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label class="titulo_campo">Genero (<span>*</span>):</label><br />
+
+                <div class="seleccion_campo">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="masculino" name="genero" value="masculino" />
+
+                    <label for="femenino">Femenino</label>
+                    <input type="radio" id="femenino" name="genero" value="femenino" />
+
+                    <label for="otro">Otro</label>
+                    <input type="radio" id="otro" name="genero" value="otro" />
+                </div>
+            </div>
+
+            <div class="campo">
+                <label class="titulo_campo" for="fechanacimiento">Fecha de Nacimiento (<span>*</span>):</label><br />
+
+                <input class="relleno_campo" type="date" id="fechanacimiento" name="fechanacimiento" />
+            </div>
+
+            <div class="campo">
+                <label class="titulo_campo" for="correoelectronico">Correo Electronico (<span>*</span>):</label><br />
+
+                <input class="relleno_campo" type="text" id="correoelectronico" name="correoelectronico"
+                    placeholder="Ej: nombre@sitio.com" />
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>©Todos los derechos reservados 2023</p>
+
+        <div class="contenido_redes">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/nataniel-cazon-984540246/" target="_blank"
+                        rel="noopener noreferrer" class="facebook"><i class="fa-brands fa-facebook"></i></a></li>
+
+                <li><a href="https://www.linkedin.com/in/nataniel-cazon-984540246/" target="_blank"
+                        rel="noopener noreferrer" class="youtube"><i class="fa-brands fa-youtube"></i></a></li>
+
+                <li><a href="https://www.linkedin.com/in/nataniel-cazon-984540246/" target="_blank"
+                        rel="noopener noreferrer" class="twitter"><i class="fa-brands fa-twitter"></i></a></li>
+
+                <li><a href="https://www.linkedin.com/in/nataniel-cazon-984540246/" target="_blank"
+                        rel="noopener noreferrer" class="discord"><i class="fa-brands fa-discord"></i></a></li>
+
+                <li><a href="https://www.linkedin.com/in/nataniel-cazon-984540246/" target="_blank"
+                        rel="noopener noreferrer" class="linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>            
+        </div>
+
+        <p>Creditos: UGB</p>
+            <a href="https://www.youtube.com/watch?v=m327MsowAvg">VIDEO</a>
+    </footer>
+
+    <!-- SCRIPTS ICONOS FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/427aab208b.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

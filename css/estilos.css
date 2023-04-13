@@ -1,0 +1,482 @@
+/**
+    Modificaciones a todo el documento
+*/
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    margin: 0 0;
+}
+
+header {
+    text-align: center;
+    background-color: darkmagenta;
+    color: white;
+}
+
+header h1 {
+    margin: 0 0;
+    padding: 10px 0;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(100, 100, 100);
+    color: white;
+    padding: 10px 0 20px 0;    
+}
+
+/** 
+    Modificaciones de iconos dentro del footer
+    ---------------------------------
+*/
+.contenido_redes {   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido_redes ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenido_redes ul li {
+    display: inline-block;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.contenido_redes ul li a {
+    display: block;
+    padding: 0 10px;
+    background-color: black;
+    color: white;
+    line-height: 50px; /** Esto es para centrar el icono. Teniendo en cuenta la altura del mismo */
+    font-size: 16px;
+}
+
+.contenido_redes .facebook:hover {
+    background-color: rgb(59, 89, 152);
+}
+
+.contenido_redes .youtube:hover {
+    background-color: red;
+}
+
+.contenido_redes .twitter:hover {
+    background-color: rgb(0, 172, 238);
+}
+
+.contenido_redes .discord:hover {
+    background-color: #5865F2;
+}
+
+.contenido_redes .linkedin:hover {
+    background-color: rgb(14, 118, 168);
+}
+
+
+/** 
+    ---------------------------------
+*/
+
+/**
+    Eliminar subrayado de los enlaces
+    ---------------------------------
+*/
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+/** 
+    ---------------------------------
+*/
+
+/**
+    Estilos aplicado a la barra de navegacion
+    ---------------------------------
+*/
+nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 10px;
+    background-color: black;
+}
+
+nav ul {
+    padding: 0 0;
+    margin-bottom: 1px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 1px;
+    width: 100px;
+    text-align: center;
+}
+
+nav ul li a {
+    display: block;
+    background-color: grey;
+    color: white;
+    font-weight: bold;
+    padding: 10px 0;
+    border: 1px solid;
+    border-radius: 5% 5% 0 0;
+    transition: 0.2s;
+}
+
+nav ul li a:hover {
+    transform: translateY(-3px) scale(1.05);
+    background-color: rgb(255, 100, 100);
+}
+/** 
+    ---------------------------------
+*/
+
+/**
+    Modificaciones en el diseño de la pantalla, para la pagina principal
+    ---------------------------------
+*/
+@media only screen and (min-width: 1140px) {
+    .contenido_principal {
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%;   
+        display: flex;  /** Este atributo funciona junto al atributo "flex: 1;" en conjunto para ajustar la disponibilidad en pantalla */
+        flex-wrap: wrap;
+    }
+
+    .lado_izquierdo{
+        flex: 0.7;  /** El valor maximo total, entre los flex, debe ser de 1 */
+    }
+
+    .lado_derecho {
+        flex: 0.3;
+    }
+}
+
+.contenido_principal {
+    text-align: justify;
+}
+/**
+    ---------------------------------
+*/
+
+/**
+    Modificacion para resaltar la pagina que se encuentre activa
+*/
+.activa {
+    background-color: darkmagenta;
+}
+
+/**
+    Modificaciones para imagenes de la pagina principal
+*/
+.imagen_noticia {
+    width: 300px;
+    height: 175px;
+}
+
+/**
+    Modificaciones para el lado izquierdo de la pagina principal
+    ---------------------------------
+*/
+.lado_derecho p {
+    margin: 0 0;
+}
+
+@media only screen and (min-width: 720px) {
+    .noticia {
+        display: flex;        
+    }
+
+    .noticia div {
+        flex: 0.7;
+    }
+    
+    .noticia figure {
+        flex: 0.3;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .noticia figure {
+        text-align: center;
+    }
+
+    .noticia div h2 {
+        margin: 0 0;
+        padding: 10px 0 0 0;
+    }
+}
+
+.noticia {
+    padding: 0 15px 20px 15px;
+}
+
+.noticia:hover {
+    background-color: rgb(255, 100, 100);
+    color: white;
+    font-weight: bold;
+    border-left: 2px solid;
+    border-color: black;
+}
+
+.noticia figure a img {
+    border: 2px solid;
+    border-color: black;
+}
+/**
+    ---------------------------------
+*/
+
+/**
+    Modificaciones para el lado derecho de la pagina principal
+    ---------------------------------
+*/
+.lado_derecho {
+    background-color: antiquewhite;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.lado_derecho ul {
+    margin: 0 0;
+}
+
+@media only screen and (max-width: 1140px) {
+    .lado_derecho {
+        padding: 10px 15px 40px 15px;
+    }
+
+    .lado_derecho h2 {
+        margin: 0 0;
+        padding: 10px 0;      
+    }
+}
+
+.lado_derecho a {
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+}
+
+.lado_derecho a:hover {
+    background-color: darkmagenta;
+    font-weight: bold;
+}
+/**
+    ---------------------------------
+*/
+
+/**
+    Modificaciones en el diseño de la pantalla, para la pagina de contacto
+    ---------------------------------
+*/
+@media only screen and (min-width: 720px){
+    .contenido_contacto {
+        margin: 0 0;    
+        margin-right: auto;
+        margin-left: auto;
+        width: 600px; 
+        padding: 0 15px 20px 15px;     
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .contenido_contacto {
+        margin: 0 0;    
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%; 
+        padding: 0 15px 20px 15px; 
+    }
+}
+
+.contenido_contacto span {
+    color: red;
+    font-weight: bold;
+}
+
+.campo {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.campo .titulo_campo {
+    font-weight: bold;
+}
+
+.campo .relleno_campo {
+    width: 100%;
+    height: 40px;
+    background-color: aliceblue;
+    border: 1px solid;
+    padding: 0 0;
+    margin-top: 10px;
+    font-size: 16px;
+    box-sizing: border-box; /** Este atributo, con su definicion "border-box", evita que el margin y el padding no ocupen espacios. */
+}
+
+.campo .seleccion_campo {
+    margin-top: 10px;
+}
+/**
+    ---------------------------------
+*/
+
+/**
+    Modificaciones en el diseño de pantalla, para la pagina mi perfil
+    ---------------------------------
+*/
+@media only screen and (min-width: 720px) {
+    .contenido_perfil {
+        margin: 0 0;    
+        margin-right: auto;
+        margin-left: auto;
+        width: 600px; 
+        padding: 0 15px 20px 15px; 
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .contenido_perfil {
+        margin: 0 0;    
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%; 
+        padding: 0 0 20px 0; 
+    }
+
+    .contenido_perfil div {
+        padding: 0 15px;
+    }
+}
+
+.contenido_perfil {
+    text-align: justify;
+}
+
+.contenido_perfil figure {
+    margin: 0 0;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    background-color: antiquewhite;
+}
+
+.contenido_perfil img {
+    border: 1px solid;
+    border-radius: 50%;    
+    border-color: darkmagenta;
+}
+
+.contenido_perfil #contacto p i {
+    margin-right: 5px;
+}
+/**
+    ---------------------------------
+*/
+
+/**
+    Modificaciones en el diseño de pantalla, para la pagina galeria
+    ---------------------------------
+*/
+.contenido_galeria {
+    margin: auto;
+    background-color: white;
+    width: 800px;
+    height: 650px;
+    padding: 20px;
+}
+
+.contenido_galeria ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contenido_galeria .creditos {
+    text-align: center;
+    padding-top: 20px
+}
+
+ul.slider {
+    position: relative;
+    width: 800px;
+    height: 520px;
+}
+
+ul.slider li {
+    position: absolute; /** Con esta propiedad, juntamos todas las imagenes en un mismo lugar (solapados) */
+    top: 0;
+    opacity: 0;
+    width: inherit; /** Al especificar "inherit" adquiere los valores del padre. En este caso, es el mismo del slider */
+    height: inherit;
+    background-color: white;
+    transition: opacity .5s;
+}
+
+ul.slider li img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;  /** Esta propiedad ajusta la imagen, de tal forma que no se deforma */
+}
+
+ul.slider li:first-child {
+    opacity: 1; /** Esto hara que el slider inicie por la primera imagen de la lista */
+}
+
+ul.slider li:target {
+    opacity: 1; /** Esta es la parte que permitira visualizar las imagenes al hacer click sobre alguno de lo botones numericos */
+}
+/**
+    ---------------------------------
+*/
+
+/**
+    Modificaciones para los botones del slider
+    ---------------------------------
+*/
+.menu {
+    text-align: center;
+    margin: 20px;
+}
+
+.menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: gray;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+    border-radius: 100%;
+}
+
+.menu li a:hover {
+    background-color: darkmagenta;
+}
+/**
+    ---------------------------------
+*/
